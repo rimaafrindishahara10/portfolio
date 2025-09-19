@@ -6,8 +6,8 @@ const About =()=>{
     const [data,setData]=useState({
         image:bannerImage,
         title:"Java Full Stack Developer",
-        decp1:`Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur veniam impedit quam omnis harum ad fugiat doloremque qui. Tenetur, quae.`,
-        decp2:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ducimus mollitia consectetur tempora quasi eum doloribus ut et eius nobis quam molestiae, officiis earum unde amet molestias officia ratione esse?`,
+        decp1:`I am a Java Full Stack Developer with hands-on experience in building small to medium-scale projects using Spring Boot. I have worked with Spring Security, REST APIs, database connections, and implemented pagination to deliver secure and efficient backend solutions.`,
+        decp2:`Alongside backend expertise, I have frontend knowledge in React and Angular, which helps me create complete and user-friendly web applications. I am passionate about learning new technologies and writing clean, maintainable code.`,
         actionButton:{
             title:"Read More..",
             link:"/readmore"

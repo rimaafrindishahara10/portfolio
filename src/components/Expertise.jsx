@@ -15,7 +15,7 @@ const Expertise =()=>{
                     <div className="w-2/3 text-center space-y-3 ">
                         {/* text container */}
                     <h1 className="text-3xl font-semibold">I Love These Technologies</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit officia dolorum nesciunt, sunt quae placeat fuga necessitatibus saepe numquam ducimus.</p>
+                    <p>I love Java, Spring Boot, Microservices, REST APIs, React, and Angular. Passionate about building full-stack apps with clean, efficient, user-friendly code.</p>
                       <button className="hover:bg-orange-500 cursor-pointer px-2 py-1 bg-orange-500 shadow rounded-full ">Hire Me</button>
                     </div>
                 </div>

@@ -1,4 +1,4 @@
-import bannerImage from "../assets/mypic.jpg"
+import bannerImage from "../assets/mypropic.jpg"
 import bannerBackImage from "../assets/Banner.png"
 import Typed from "typed.js"
 import { useRef, useEffect } from "react";
@@ -8,7 +8,7 @@ const Banner=()=>{
     const el = useRef(null)
     useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["Java Backend Developer","Frontend Developer","Full Stack Java Developer"], // Strings to display
+      strings: ["Backend Developer","Frontend Developer","Full Stack Java Developer"], // Strings to display
       // Speed settings, try diffrent values untill you get good results
       startDelay: 150,
       typeSpeed: 50,
@@ -40,7 +40,7 @@ const Banner=()=>{
   And I am a <span ref={el}></span>
 </h2>
 
-        <p className="mt-2 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel enim voluptatem eaque ducimus voluptatum, aliquam eveniet facere molestiae delectus quis?</p>
+        <p className="mt-2 mb-3">I am a Full Stack Java Developer and Frontend Developer skilled in React and Angular, passionate about building modern, efficient, and user-friendly web applications.</p>
 
          <div className="icons-container flex space-x-5 mt-2 mb-5">
             <a className="hover:bg-orange-500 cursor-pointer px-3 py-4 w-12 h-12 rounded-full flex justify-center items-center bg-gray-800">
