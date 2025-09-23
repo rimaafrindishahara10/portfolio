@@ -1,4 +1,5 @@
 import { useState } from "react";
+import DownloadCvButton from "./DownloadCV";
 
 const Header=()=>{
 
@@ -34,10 +35,12 @@ const Header=()=>{
     ]);
     const[actionButton,setActionButton] = useState([
         {title:"Hire Me",
-         link:"/hire-me"
+         link:"/hire-me",
+         id:1
         },
         {title:"Download CV",
-         link:"/downloadcv"
+         link:"/downloadcv",
+         id:2
         },
         
     ])
@@ -61,12 +64,23 @@ const Header=()=>{
                 </div>
 
                  <div className="flex gap-3">
-                 {/* {buttons} */}
-                 {actionButton.map((button)=>(
-                    <a href={button.link} className="px-2 py-1 bg-orange-500 shadow rounded-full ">{button.title}</a>
-                 ))}
-                 
-                </div>
+        {/* Action buttons */}
+        {actionButton.map((button) => {
+          if (button.title === "Download CV") {
+            return <DownloadCvButton key={button.id} />;
+          }
+          return (
+            <a
+              key={button.id}
+              href={button.link}
+              className="px-2 py-1 bg-orange-500 shadow rounded-full text-black"
+            >
+              {button.title}
+            </a>
+          );
+        })}
+      </div>
+   
 
 
         </div>
