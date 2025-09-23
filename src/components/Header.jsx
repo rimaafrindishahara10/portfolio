@@ -75,7 +75,7 @@ const Header=()=>{
               href={button.link}
               className="px-2 py-1 bg-orange-500 shadow rounded-full text-black"
             >
-              {button.title}
+              {button.title} 
             </a>
           );
         })}
