@@ -64,22 +64,25 @@ const Header=()=>{
                 </div>
 
                  <div className="flex gap-3">
-        {/* Action buttons */}
+         {/* Action Buttons */}
+      <div className="flex gap-3">
         {actionButton.map((button) => {
           if (button.title === "Download CV") {
+            // Use here=> DownloadCvButton component
             return <DownloadCvButton key={button.id} />;
           }
           return (
             <a
               key={button.id}
               href={button.link}
-              className="px-2 py-1 bg-orange-500 shadow rounded-full text-black"
+              className="px-2 py-1 bg-orange-500 shadow rounded-full text-black hover:bg-orange-600"
             >
-              {button.title} 
+              {button.title}
             </a>
           );
         })}
       </div>
+    </div>
    
 
 

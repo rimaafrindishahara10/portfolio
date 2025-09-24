@@ -2,25 +2,16 @@ import React from "react";
 
 const DownloadCvButton = () => {
   const handleDownload = () => {
-    fetch("http://localhost:8080/download?fileName=Rima-Afrin-Dishahara(UpdatedCV).pdf")
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("File not found");
-        }
-        return response.blob();
-      })
-      .then((blob) => {
-        const url = window.URL.createObjectURL(new Blob([blob]));
-        const link = document.createElement("a");
-        link.href = url;
-        link.setAttribute("download", "Rima-Afrin-Dishahara(UpdatedCV).pdf");
-        document.body.appendChild(link);
-        link.click();
-        link.parentNode.removeChild(link);
-      })
-      .catch((error) => {
-        console.error("Download error:", error);
-      });
+   
+    const fileUrl = "/assets/cv.pdf";
+
+    const link = document.createElement("a");
+    link.href = fileUrl;
+  
+    link.setAttribute("download", "Rima-Afrin-Dishahara.pdf");
+    document.body.appendChild(link);
+    link.click();
+    link.parentNode.removeChild(link);
   };
 
   return (
